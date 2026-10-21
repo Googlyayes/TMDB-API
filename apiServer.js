@@ -398,9 +398,10 @@ const PORT = config.port;
 const HOST = process.env.BIND_HOST || '0.0.0.0';
 const server = app.listen(PORT, HOST, () => {
   console.log(`TMDB Embed REST API listening on http://${HOST}:${PORT}`);
-  if (HOST !== 'localhost') {
-    console.log(`Local access (if running on your machine): http://localhost:${PORT}`);
-  }
+ if (process.env.NODE_ENV !== 'production') {
+  app.listen(8787, () => console.log('Server running locally on port 8787'));
+}
+module.exports = app;
   console.log('Endpoints:');
   console.log('  GET  /api/health');
   console.log('  GET  /api/metrics');
