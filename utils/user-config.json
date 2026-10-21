@@ -1,9 +1,13 @@
 {
-  "defaultProviders": [],
+  "defaultProviders": ["4khdhub", "showbox"],
   "configVersion": 1,
-  "tmdbApiKeys": [],
+  "tmdbApiKeys": [
+    "C2DBBDDD8FF47999865511E973B2042E"
+  ],
   "enableShowboxProvider": true,
-  "febboxCookies": [],
+  "febboxCookies": [
+    "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE3OTI2MDI3MzYsIm5iZiI6MTc5MjYwMjczNiwiZXhwIjoxODIzNzA2NzU2LCJkYXRhIjp7InVpZCI6MjUzNjMzNiwidG9rZW4iOiI1OTgwZGZjMjNkNmE0OTdjZTkzNWI3NWRiNzRkYzIwZiJ9fQ.-vpC0g9ptdvQCHiIdU_sBEJMKOaq2VHLQ2_-ZQtZNkQ"
+  ],
   "enable4khdhubProvider": true,
   "enableVixsrcProvider": true,
   "enableProxy": false,
